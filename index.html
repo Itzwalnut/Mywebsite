@@ -1,7 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+  <style>
+    body{
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-size: cover;
+      animation: backgroundChange 30s infinite;
+      animation-timing-function: steps(1, end);
+    }
+
+    @keyframes backgroundChange {
+      0% { background-image: url(picture1.png); }
+      25% { background-image: url(picture2.png); }
+      50% { background-image: url(picture3.png); }
+      75% { background-image: url(picture4.png); }
+      100% { background-image: url(picture1.png); }
+    }
+  </style>
 </head>
 <body>
 
