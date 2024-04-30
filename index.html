@@ -23,31 +23,49 @@
     }
   </style>
   <!-- end of background imgae-->
-</head>
-<body>
-<!--start of search bar-->
-  <form id="form" role="search">
-    <input type="search" id="query" name="q"
-     placeholder="Search..."
-     aria-label="Search through site content">
-    <button>Search</button>
-  </form>
-  <script>
-    const f = document.getElementById('form');
-    const q = document.getElementById('query');
-    const google = 'https://www.google.com/search?q=site%3A+';
-    const site = 'www.google.com';
-
-    function submitted(event) {
-      event.preventDefault();
-      const url = google + site + '+' + q.value;
-      const win = window.open(url, '_blank');
-      win.focus();
+  form {
+      background-color: #d8d9e7;
+      width: 300px;
+      height: 44px;
+      border-radius: 5px;
+      display:flex;
+      flex-direction:row;
+      align-items:center;
     }
 
-    f.addEventListener('submit', submitted);
-  </script>
+    ::placeholder {
+      color: #fff;
+      opacity: 0.7; 
+    }
+
+    input {
+      all: unset;
+      font: 16px system-ui;
+      color: #fff;
+      height: 100%;
+      width: 100%;
+      padding: 6px 10px;
+    }
+    button {
+      all: unset;
+      cursor: pointer;
+      width: 44px;
+      height: 44px;
+    }
+
+</head>
+<body>
+
+  
+  <!--start of search bar-->
+  <div class = "container">
+    <form action="https://www.google.com/search" method = "get" class="search-bar">
+      <input type="text" placeholder="search anything" name="q">
+      <button type="submit">Lets GO!</button>
+    </form>
+  </div>
   <!-- end of search bar-->
+
 
 </body>
 </html>
