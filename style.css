@@ -1,10 +1,8 @@
+
 body{
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     animation: backgroundChange 30s infinite;
     animation-timing-function: steps(1, end);
   }
@@ -19,6 +17,10 @@ body{
 
 
 .container {
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   form {
     background-color: #dcdce6;
     width: 300px;
@@ -50,13 +52,9 @@ body{
   }
 
   #CV_button{
-    position: absolute;
-    bottom: 35%;
-    left: 40%;
+    margin: 30px;
   }
 
   .youtube {
-    position: absolute;
-    bottom: 30%;
-    right: 40%;
+    margin: 30px;
   }
